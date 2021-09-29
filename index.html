@@ -25,16 +25,30 @@
                     <li>O jogador tem apenas 5 chances</li>
                 </ul>
             </div>
-            <div class="container-inputs">
-                <label for="label">Digite um número de 0 a 100</label>
-                <input type="number" name="valor" id="valor">
-                <div class="button">
-                    <button type="submit" onclick="chutar()" id="button">Chutar</button>
-                    <button type="submit" onclick="reiniciar()" id="reiniciar">Reiniciar</button>
+            <div class="container-game">
+                <div class="container-tabela">
+                    <table>
+                        <thead>
+                            <th>Nome</th>
+                            <th>Vitórias</th>
+                            <th>Empates</th>
+                            <th>Derrotas</th>
+                            <th>Pontos</th>
+                        </thead>
+                        <tbody id="tabelaDeJogadores"></tbody>
+                    </table>
                 </div>
-                <div class="campo">
-                    <h4 id="resultado"></h4>
-                    <p id="tentativas"></p>
+                <div class="container-inputs">
+                    <label for="label">Digite um número de 0 a 100</label>
+                    <input type="number" name="valor" id="valor">
+                    <div class="button">
+                        <button type="submit" onclick="chutar()" id="button">Chutar</button>
+                        <button type="submit" onclick="reiniciar()" id="reiniciar">Reiniciar</button>
+                    </div>
+                    <div class="campo">
+                        <h4 id="resultado"></h4>
+                        <p id="tentativas"></p>
+                    </div>
                 </div>
             </div>
         </div>
