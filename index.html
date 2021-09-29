@@ -25,6 +25,11 @@
                     <li>O jogador tem apenas 5 chances</li>
                 </ul>
             </div>
+            <div class="container-jogador">
+                <label for="nome">Informe o nome do jogador</label>
+                <input type="text" name="nome" id="nome">
+                <button type="submit" onclick="enviar()" id="enviar">Enviar</button>
+            </div>
             <div class="container-game">
                 <div class="container-tabela">
                     <table>
@@ -42,7 +47,7 @@
                     <label for="label">Digite um número de 0 a 100</label>
                     <input type="number" name="valor" id="valor">
                     <div class="button">
-                        <button type="submit" onclick="chutar()" id="button">Chutar</button>
+                        <button type="submit" onclick="chutar()" id="chutar">Chutar</button>
                         <button type="submit" onclick="reiniciar()" id="reiniciar">Reiniciar</button>
                     </div>
                     <div class="campo">
