@@ -1,8 +1,8 @@
 var numeroSecreto = parseInt(Math.random() * 101);
 var elementoResultado = document.getElementById("resultado");
 var elementoTentativas = document.getElementById("tentativas");
-var botao = document.getElementById("chutar");
 var tentativas = 5;
+var botao = document.getElementById("chutar");
 console.log(numeroSecreto);
 
 function chutar() {
