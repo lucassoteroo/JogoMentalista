@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style-home.css">
+    <title>Home - O Mentalista</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h3>O Mentalista</h3>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="container-texto">
+                <p>O mentalista consiste em um jogo onde será sorteado um número pela máquina. O jogador tem que advinhar o número... Boa Sorte!</p>
+            </div>
+            <div class="container-jogador">
+                <label for="nome">Informe o nome do jogador ou jogadores</label>
+                <input type="text" name="nome" id="nome">
+                <button type="submit" onclick="adicionarJogador()" id="enviar">Enviar</button>
+            </div>
+            <div class="container-play">
+                <button type="submit" onclick="iniciar()">Iniciar o Game</button>
+            </div>
+        </div>
+    </main>
+    <script src="./js/tela.js"></script>
+    <script src="./js/jogadores.js"></script>
+</body>
+
+</html>
