@@ -1,10 +1,4 @@
-/*
 var jogadores = [];
-*/
-
-import { jogadores } from './jogador';
-console.log(jogadores);
-
 
 function exibirJogadores(jogadores) {
     var elemento = "";
@@ -23,7 +17,6 @@ function exibirJogadores(jogadores) {
     tabelaDeJogadores.innerHTML = elemento;
 }
 
-/*
 function adicionarJogador() {
     let jogador = {
         nome: document.getElementById("nome").value,
@@ -37,7 +30,6 @@ function adicionarJogador() {
     document.getElementById("nome").value = "";
     exibirJogadores(jogadores)
 }
-*/
 
 function adicionarVitoria(i) {
     var jogador = jogadores[i];
