@@ -64,7 +64,6 @@ main .container {
 
 .container-jogador {
     text-align: center;
-    margin: 0 auto;
     width: 50%;
     display: flex;
     flex-direction: column;

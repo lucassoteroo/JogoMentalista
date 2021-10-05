@@ -1,0 +1,35 @@
+@media screen and (max-width: 1000px) {
+    header .container h3 {
+        text-align: center;
+        padding-left: 0;
+    }
+    .secao01 {
+        display: flex;
+        flex-direction: column;
+    }
+    .container-tabela,
+    .container-texto {
+        width: 100%;
+    }
+    .container-inputs {
+        margin: 0 auto 10vw auto;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .container-jogador input {
+        width: 70%;
+    }
+    .container-jogador button {
+        width: 50%;
+    }
+    .container-jogador {
+        width: 100%;
+    }
+    table {
+        font-size: 8px;
+    }
+    td button {
+        font-size: 8px;
+    }
+}
