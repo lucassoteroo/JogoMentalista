@@ -51,6 +51,7 @@ function adicionarDerrota(i) {
     exibirJogadores(jogadores);
 }
 
+
 function calculaPontos(jogador) {
     var pontos = (jogador.vitorias * 3) + jogador.empates;
     return pontos
