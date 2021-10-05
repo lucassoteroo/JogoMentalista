@@ -15,7 +15,7 @@ header {
 }
 
 header .container {
-    padding: 30px 20px;
+    padding: 40px 20px;
 }
 
 header .container h3 {
@@ -30,16 +30,30 @@ main .container {
 
 .container-texto {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     padding: 50px 0;
+    width: 50%;
+    margin: 20px auto 0 auto;
+    text-align: center;
 }
 
-.container-texto p,
-.container-texto ul {
-    width: 45%;
+.container-texto .sobre,
+.container-jogador .inputs {
+    margin-top: 35px;
+}
+
+.container-game .jogo {
+    margin-top: 10px;
+}
+
+.container-texto p {
     font-weight: 600;
+}
+
+.regras {
+    margin-top: 50px;
 }
 
 .container-jogador {
@@ -50,6 +64,7 @@ main .container {
     flex-direction: column;
     font-weight: 600;
     padding: 20px 0px 50px 0px;
+    margin: 50px auto 0 auto;
 }
 
 .container-jogador button {
@@ -70,8 +85,10 @@ main .container {
 
 .container-game {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
+    text-align: center;
+    margin-top: 30px;
 }
 
 .container-tabela {

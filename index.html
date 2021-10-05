@@ -18,48 +18,60 @@
     <main>
         <div class="container">
             <div class="container-texto">
-                <p>O mentalista consiste em um jogo onde será sorteado um número pela máquina. O jogador tem que advinhar o número... Boa Sorte!</p>
-                <ul>
-                    <h4>Regras: </h4>
-                    <li>O número sorteado pode ser de 0 a 100</li>
-                    <li>O jogador tem apenas 5 chances</li>
-                </ul>
+                <h2>Sobre o jogo</h2>
+                <div class="sobre">
+                    <div class="texto">
+                        <p>O mentalista consiste em um jogo onde será sorteado um número pela máquina. O jogador tem que advinhar o número... Boa Sorte!</p>
+                    </div>
+                    <div class="regras">
+                        <h4>Regras: </h4>
+                        <p>O número sorteado pode ser de 0 a 100</p>
+                        <p>O jogador tem apenas 5 chances</p>
+                    </div>
+                </div>
             </div>
             <div class="container-jogador">
-                <label for="nome">Informe o nome do jogador</label>
-                <input type="text" name="nome" id="nome">
+                <h2>Jogadores</h2>
+                <div class="inputs">
+                    <label for="nome">Informe o nome do jogador</label>
+                    <input type="text" name="nome" id="nome">
+                </div>
                 <button type="submit" onclick="adicionarJogador()" id="enviar">Enviar</button>
             </div>
             <div class="container-game">
-                <div class="container-tabela">
-                    <table>
-                        <thead>
-                            <th>Nome</th>
-                            <th>Vitórias</th>
-                            <th>Empates</th>
-                            <th>Derrotas</th>
-                            <th>Pontos</th>
-                            <th colspan="3">Comandos</th>
-                        </thead>
-                        <tbody id="tabelaDeJogadores"></tbody>
-                    </table>
-                </div>
-                <div class="container-inputs">
-                    <label for="label">Digite um número de 0 a 100</label>
-                    <input type="number" name="valor" id="valor">
-                    <div class="button">
-                        <button type="submit" onclick="chutar()" id="chutar">Chutar</button>
-                        <button type="submit" onclick="reiniciar()" id="reiniciar">Reiniciar</button>
+                <h2>Hora de Jogar</h2>
+                <div class="jogo">
+                    <div class="container-tabela">
+                        <table>
+                            <thead>
+                                <th>Nome</th>
+                                <th>Vitórias</th>
+                                <th>Empates</th>
+                                <th>Derrotas</th>
+                                <th>Pontos</th>
+                                <th colspan="3">Comandos</th>
+                            </thead>
+                            <tbody id="tabelaDeJogadores"></tbody>
+                        </table>
                     </div>
-                    <div class="campo">
-                        <h4 id="resultado"></h4>
-                        <p id="tentativas"></p>
+                    <div class="container-inputs">
+                        <label for="label">Digite um número de 0 a 100</label>
+                        <input type="number" name="valor" id="valor">
+                        <div class="button">
+                            <button type="submit" onclick="chutar()" id="chutar">Chutar</button>
+                            <button type="submit" onclick="reiniciar()" id="reiniciar">Reiniciar</button>
+                        </div>
+                        <div class="campo">
+                            <h4 id="resultado"></h4>
+                            <p id="tentativas"></p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </main>
     <script src="./js/main.js"></script>
+    <script src="./js/jogador.js"></script>
     <script src="./js/jogadores.js"></script>
 </body>
 
