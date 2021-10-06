@@ -38,5 +38,4 @@ function reiniciar() {
     elementoResultado.innerHTML = "Jogo Reiniciado";
     elementoTentativas.innerHTML = "Tentativas: " + tentativas;
     document.getElementById("reiniciar"), disabled = true;
-    document.getElementById("tabelaDeJogadores").innerHTML = "";
 }

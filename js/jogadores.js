@@ -1,5 +1,26 @@
 var jogadores = [];
 
+function adicionarJogador() {
+    let jogador = {
+        nome: document.getElementById("nome").value,
+        vitorias: 0,
+        empates: 0,
+        derrotas: 0,
+        pontos: 0
+    }
+    jogadores.push(jogador);
+    console.log(jogadores)
+    document.getElementById("nome").value = "";
+    exibirJogadores(jogadores)
+}
+
+function reiniciarJogo() {
+    tentativas = 5;
+    numeroSecreto = parseInt(Math.random() * 101);
+    document.getElementById("valor").value = "";
+    location.reload();
+}
+
 function exibirJogadores(jogadores) {
     var elemento = "";
     for (i = 0; i < jogadores.length; i++) {
@@ -17,19 +38,6 @@ function exibirJogadores(jogadores) {
     tabelaDeJogadores.innerHTML = elemento;
 }
 
-function adicionarJogador() {
-    let jogador = {
-        nome: document.getElementById("nome").value,
-        vitorias: 0,
-        empates: 0,
-        derrotas: 0,
-        pontos: 0
-    }
-    jogadores.push(jogador);
-    console.log(jogadores)
-    document.getElementById("nome").value = "";
-    exibirJogadores(jogadores)
-}
 
 function adicionarVitoria(i) {
     var jogador = jogadores[i];
