@@ -72,11 +72,17 @@ main .container {
     margin: 50px auto 0 auto;
 }
 
-.container-jogador button {
-    padding: 5px 15px;
-    width: 25%;
-    margin: 10px auto 0px auto;
+.container-jogador .button a {
+    background-color: #fff;
+    font-size: 10px;
+    padding: 5px 20px;
     font-weight: 900;
+    cursor: pointer;
+    border: 1px solid #000;
+}
+
+.container-jogador .button a:hover {
+    background-color: #ffffff62;
 }
 
 .container-jogador input {
@@ -130,9 +136,17 @@ main .container {
     margin-top: 20px;
 }
 
-.container-inputs .button button {
+.container-inputs .button a {
+    background-color: #fff;
+    font-size: 10px;
     padding: 5px 15px;
     font-weight: 900;
+    cursor: pointer;
+    border: 1px solid #000;
+}
+
+.container-inputs .button a:hover {
+    background-color: #ffffff62;
 }
 
 .container-jogadores {
