@@ -14,6 +14,9 @@
     .container-inputs {
         margin: 0 auto 10vw auto;
     }
+    .container-texto {
+        padding: 50px 0 0 0;
+    }
 }
 
 @media screen and (max-width: 750px) {
@@ -31,5 +34,16 @@
     }
     td button {
         font-size: 8px;
+    }
+    header h3 {
+        font-size: 16px;
+    }
+    main h2 {
+        font-size: 18px;
+    }
+    main p,
+    main h4,
+    main label {
+        font-size: 15px;
     }
 }
