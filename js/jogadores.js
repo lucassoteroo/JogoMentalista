@@ -26,7 +26,6 @@ function exibirJogadores(jogadores) {
     for (i = 0; i < jogadores.length; i++) {
         elemento += "<tr><td>" + jogadores[i].nome + "</td>";
         elemento += "<td>" + jogadores[i].vitorias + "</td>";
-        elemento += "<td>" + jogadores[i].empates + "</td>";
         elemento += "<td>" + jogadores[i].derrotas + "</td>";
         elemento += "<td>" + jogadores[i].pontos + "</td>";
         elemento += "<td><button onClick='adicionarVitoria(" + i + ")'>Vitória</button></td>";
@@ -53,6 +52,6 @@ function adicionarDerrota(i) {
 
 
 function calculaPontos(jogador) {
-    var pontos = (jogador.vitorias * 3) + jogador.empates;
+    var pontos = (jogador.vitorias * 3);
     return pontos
 }
